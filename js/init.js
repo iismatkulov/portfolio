@@ -64,10 +64,9 @@ function(o) {
                     n = o("#email").val(),
                     a = o("#message").val(),
                     s = o("#phone").val(),
-                    r = e.find(".modal-overlay"),
-                    m = e.find(".modal"),
-                    x = e.find(".success"),
-                    i = x.data("success"),
+                    r = e.find(".modal-overtal"),
+                    m = $('.modal-overlay, .modal');
+                    i = r.data("success"),
                     d = e.data("email");
                 return r.empty(), "" === t || "" === n || "" === a || "" === d || "" === s ? o(".empty_notice").slideDown(500).delay(2e3).slideUp(500) : o.post(`https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=Сообщение от ${t} \n Номер телефона: ${s} \n Эл.почта: ${n}`, {
                     ajax_name: t,
