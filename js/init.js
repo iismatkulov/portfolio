@@ -57,7 +57,13 @@ function(o) {
                 }, 1e3), o(".right_bar_clother a").trigger("click"))
             })
         },
+        
         contactForm: function() {
+            var elements = $('.modal-overlay, .modal');
+
+            $('.close-modal').click(function(){
+                elements.removeClass('active');
+            });
             o("#send_message").on("click", function() {
                 var e = o(".section_contact .contact_form"),
                     t = o("#name").val(),
