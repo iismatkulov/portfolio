@@ -64,7 +64,7 @@ function(o) {
                     n = o("#email").val(),
                     a = o("#message").val(),
                     s = o("#phone").val(),
-                    r = e.find(".modal-overtal"),
+                    r = e.find(".success"),
                     m = $('.modal-overlay, .modal');
                     i = r.data("success"),
                     d = e.data("email");
