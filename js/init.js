@@ -76,7 +76,7 @@ function(o) {
                     ajax_message: a,
                     ajax_phone: s
                 }, function(o) {
-                    r.addClass('active') + m.addClass('active'), r.find(".contact_error").length ? r.slideDown(500).delay(2e3).slideUp(500) : (r.append("<span class='contact_success'>" + i + "</span>"), r.slideDown(500).delay(4e3).slideUp(500)), "" === o && e[0].reset()
+                    m.addClass('active'), r.find(".contact_error").length ? r.slideDown(500).delay(2e3).slideUp(500) : (r.append("<span class='contact_success'>" + i + "</span>"), r.slideDown(500).delay(4e3).slideUp(500)), "" === o && e[0].reset()
                 }), !1
             })
         },
