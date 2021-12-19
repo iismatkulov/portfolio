@@ -2707,7 +2707,7 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
   transform: scale(1.2);
   transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 }
-.modal .close {
+.modal .close-window {
   position: absolute;
   cursor: pointer;
   top: 5px;
@@ -2717,7 +2717,7 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition-delay: 0.3s;
 }
-.modal .close-modal svg {
+.modal .close-window svg {
   width: 1.75em;
   height: 1.75em;
 }
@@ -2735,7 +2735,7 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
 .modal.active .modal-content {
   opacity: 1;
 }
-.modal.active .close-modal {
+.modal.active .close-window {
   transform: translateY(10px);
   opacity: 1;
 }
@@ -2757,7 +2757,7 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
     transform: scale(1.1);
     padding: 0 !important;
   }
-  .close {
+  .close-window {
     right: 20px !important;
   }
 }

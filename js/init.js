@@ -61,7 +61,7 @@ function(o) {
         contactForm: function() {
             var elements = $('.modal-overlay, .modal');
 
-            $('.close').click(function(){
+            $('.close-window').click(function(){
                 elements.removeClass('active');
             });
             o("#send_message").on("click", function() {
