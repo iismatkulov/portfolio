@@ -74,7 +74,7 @@ function(o) {
                     m = $('.modal-overlay, .modal'),
                     i = r.data("success"),
                     d = e.data("email");
-                return r.empty(), "" === t || "" === n || "" === a || "" === d || "" === s ? o(".empty_notice").slideDown(500).delay(2e3).slideUp(500) : o.post(`https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=Сообщение от ${t} \n Номер телефона: ${s} \n Эл.почта: ${n} \n Сообщение: ${a}`, {
+                return r.empty(), "" === t || "" === n || "" === a || "" === d || "" === s ? o(".empty_notice").slideDown(500).delay(2e3).slideUp(500) : o.post(`https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=Сообщение от:${t} <br> Номер телефона: ${s} <br> Эл.почта: ${n} <br> Сообщение: ${a}&parse_mode=HTML`, {
                     ajax_name: t,
                     ajax_email: n,
                     ajax_emailto: d,
