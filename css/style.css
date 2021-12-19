@@ -34,7 +34,7 @@ body {
   z-index: 2;
 }
 .fn__svg {
-  fill: green;
+  fill: currentColor;
   width: 18px;
   height: 18px;
 }
