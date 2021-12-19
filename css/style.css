@@ -2716,6 +2716,10 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
   backface-visibility: hidden;
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition-delay: 0.3s;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 24px;
+
 }
 .modal .close-window svg {
   width: 1.75em;
@@ -2759,9 +2763,6 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
   }
   .close-window {
     right: 20px !important;
-    border: none !important;
-    padding: 0 !important;
-    font-size: 24px;
     
   }
 }
