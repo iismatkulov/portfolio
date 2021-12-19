@@ -34,7 +34,7 @@ body {
   z-index: 2;
 }
 .fn__svg {
-  fill: currentColor;
+  fill: white;
   width: 18px;
   height: 18px;
 }
@@ -2657,7 +2657,4 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
 .load_more a,
 .section_contact .contact_form a {
   border-radius: 50px;
-}
-svg{
-    fill: white;
 }
