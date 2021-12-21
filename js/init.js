@@ -96,6 +96,7 @@ function(o) {
                 })
             })
         },
+        
         progress2F: function(e) {
             e.find(".progress_item").each(function(e) {
                 var t = o(this),
