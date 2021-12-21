@@ -7,4 +7,4 @@ document.addEventListener('visibilitychange', function (event) {
         document.title = title;
     }
 });
-AOS.init()
+
