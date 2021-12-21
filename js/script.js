@@ -1,9 +1,9 @@
-arr = [];
+var title = 0;
 document.addEventListener('visibilitychange', function (event) {
     if (document.hidden) {
-        arr.shift = document.title;
+        title = document.title;
         document.title = 'Вернись!';
     } else {
-        document.title = arr[0];
+        document.title = title;
     }
 });
