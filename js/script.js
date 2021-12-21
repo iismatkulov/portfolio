@@ -1,6 +1,6 @@
 document.addEventListener('visibilitychange', function (event) {
     if (document.hidden) {
-        console.log('not visible');
+        document.title.value = 'Вернись!';
     } else {
         console.log('is visible');
     }
