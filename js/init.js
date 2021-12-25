@@ -127,7 +127,7 @@ function(o) {
                     r = n.closest(".modal_items"),
                     i = n.attr("data-index"),
                     d = r.attr("data-from");
-                return s.attr("data-index", i), s.attr("data-from", d), o("body").addClass("modal"), t.addClass("opened"), t.find(".modal_in").html(a), e.modal_prevnext(s, t), e.imgToSVG(), e.BgImg(), !1
+                return s.attr("data-index", i), s.attr("data-from", d), t.addClass("opened"), t.find(".modal_in").html(a), e.modal_prevnext(s, t), e.imgToSVG(), e.BgImg(), !1
             }), e.modal_prevnext(s, t), a.on("click", function() {
                 return t.removeClass("opened hovered"), t.find(".modal_in").html(""), o("body").removeClass("modal"), !1
             })
