@@ -314,10 +314,10 @@ p {
   right: 15px;
   left: 0;
   bottom: 0;
-  background-color: #d3a583;
+  background-color: #00ff37;
   z-index: 2;
   border-radius: 100%;
-  box-shadow: -5px 5px 20px #d3a583;
+  box-shadow: -5px 5px 20px #00ff37;
 }
 .section_header .lines {
   position: absolute;
