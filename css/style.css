@@ -1979,7 +1979,8 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: cover;
+  width: 100%;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
