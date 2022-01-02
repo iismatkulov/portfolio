@@ -317,7 +317,7 @@ p {
   background-color: #00ff37;
   z-index: 2;
   border-radius: 100%;
-  box-shadow: -5px 5px 20px #00ff37;
+  box-shadow: -5px 5px 20px var(--mc);
 }
 .section_header .lines {
   position: absolute;
