@@ -924,7 +924,7 @@ p {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 150px;
+  width: 100%;
   z-index: 5;
   background-size: cover;
   background-repeat: no-repeat;
