@@ -823,12 +823,17 @@
 <script type="text/javascript" src="js/waypoints.js?ver=3"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-	//Код jQuery, установливающий маску для ввода телефона элементу input
-	//1. После загрузки страницы,  когда все элементы будут доступны выполнить...
-	$(function(){
-	  //2. Получить элемент, к которому необходимо добавить маску
-	  $("#phone").mask("8(999) 999-9999");
-	});
+	var phone_number = window.intlTelInput(document.querySelector("#phone"), {
+  separateDialCode: true,
+  preferredCountries:["in"],
+  hiddenInput: "full",
+  utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+});
+$("form").submit(function() {
+  var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+$("input[name='phone'").val(full_number);
+  alert(full_number)
+});
 	</script>
 <script>
 	AOS.init()
