@@ -2745,8 +2745,8 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
   transform: translateY(10px);
   opacity: 1;
 }
-.email{
-  font-size: 25px;
+.email-title{
+  font-size: 25px !important;
 }
 /**
  * Mobile styling
