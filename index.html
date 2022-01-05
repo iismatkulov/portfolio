@@ -818,9 +818,18 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="js/jquery.js?ver=3"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="js/animated-headlines.js?ver=3"></script>
 <script type="text/javascript" src="js/waypoints.js?ver=3"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	//Код jQuery, установливающий маску для ввода телефона элементу input
+	//1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+	$(function(){
+	  //2. Получить элемент, к которому необходимо добавить маску
+	  $("#phone").mask("8(999) 999-9999");
+	});
+	</script>
 <script>
 	AOS.init()
 </script>
