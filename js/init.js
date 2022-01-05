@@ -64,7 +64,7 @@ function(o) {
 
             $(function(){
                 //Использование параметра completed
-                $("#phone").mask("8(999) 999-9999", {
+                $("#phone").inputmask("8(999) 999-9999", {
                     completed: function(){ alert("Вы ввели номер: " + this.val()); }
                 });
             });
