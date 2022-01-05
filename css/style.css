@@ -2745,12 +2745,6 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
   transform: translateY(10px);
   opacity: 1;
 }
-.iti{
-  width: 100% !important;
-}
-.iti__country-list--dropup{
-  z-index: 9999 !important;
-}
 /**
  * Mobile styling
  */

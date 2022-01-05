@@ -2,7 +2,6 @@ $.fn.humbleProgressIsInViewport = function(o) {
     "use strict";
     return $(this).offset().top - o.outerHeight()
 },
-
 function(o) {
     "use strict";
     var e = {
@@ -61,8 +60,6 @@ function(o) {
         
         contactForm: function() {
             var elements = $('.modal-overlay, .modal');
-
-
 
             $('.close-window').click(function(){
                 elements.removeClass('active');
@@ -214,7 +211,6 @@ function(o) {
                 right: "100%"
             }), e.find(".progress_item").removeClass("open")
         },
-    
         imgToSVG: function() {
             o("img.fn__svg").each(function() {
                 var e = o(this),
