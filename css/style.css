@@ -2762,6 +2762,7 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
     border-radius: 0;
     transform: scale(1.1);
     padding: 0 !important;
+    z-index: 9999;
   }
   .close-window {
     right: 20px !important;
