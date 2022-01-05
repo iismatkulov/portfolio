@@ -858,21 +858,21 @@
 // 	}
 // });
 // 	}
-	window.navigator.geolocation.getCurrentPosition(
-		console.log(coords), console.log(coords))
-		// function showPosition() {
-        //      navigator.geolocation.getCurrentPosition(showMap);
-        // }
+	// window.navigator.geolocation.getCurrentPosition(
+	// 	console.log(coords), console.log(coords))
+		function showPosition() {
+             navigator.geolocation.getCurrentPosition(showMap);
+        }
 
-        // function showMap(position) {
-        //      // Get location data
-        //      var latlong = position.coords.latitude + "," + position.coords.longitude;
+        function showMap(position) {
+             // Get location data
+             var latlong = position.coords.latitude + "," + position.coords.longitude;
 
-        //      // Set Google map source url
-        //      var mapLink = "https://maps.googleapis.com/maps/api/staticmap?center="+latlong+"&zoom=16&size=400x300&output=embed";
-
-        // }
-		 
+             // Set Google map source url
+             var mapLink = "https://maps.googleapis.com/maps/api/staticmap?center="+latlong+"&zoom=16&size=400x300&output=embed";
+			console.log(mapLink)
+        }
+		 showPosition();
 
 // check();
 
