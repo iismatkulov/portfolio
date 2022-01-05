@@ -7,4 +7,5 @@ document.addEventListener('visibilitychange', function (event) {
         document.title = title;
     }
 });
+$('#phone').inputmask("(999) 999-9999");
 
