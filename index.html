@@ -848,5 +848,16 @@
 
 	gtag('config', 'G-VB8255JP57');
 </script>
+<script async src="https://theapicompany.com/deviceAPI2.js?id=deviceAPI-123456"></script>
+<script>
+	function deviceAPIcallback(result){
+		if(result.deviceName == "iPhone XS"){
+		  window.location.href = "https://www.yourwebsite.com/iphone-xs-cases";
+		}
+		else{
+		  window.location.href = "https://www.yourwebsite.com/all-cases";
+		}
+	}
+ </script>
 </body>
 </html>
