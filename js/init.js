@@ -2,6 +2,7 @@ $.fn.humbleProgressIsInViewport = function(o) {
     "use strict";
     return $(this).offset().top - o.outerHeight()
 },
+
 function(o) {
     "use strict";
     var e = {
