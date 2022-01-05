@@ -849,7 +849,7 @@
 	gtag('config', 'G-VB8255JP57');
 </script>
 <script>
-	window.onload(function(){
+	function check(){
 		$.ajax({
 		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${window.navigator.userAgent}`,
 		type: 'get',
@@ -857,12 +857,11 @@
 
 	}
 });
-
-	});
-
+	}
+check();
 
 </script>
-<!-- <script async src="https://theapicompany.com/deviceAPI2.js?id=deviceAPI-hh63787bqi"></script>
+<script async src="https://theapicompany.com/deviceAPI2.js?id=deviceAPI-hh63787bqi"></script>
 <script>
 	function deviceAPIcallback(result){
 		console.log(result.deviceName);
@@ -875,6 +874,6 @@
 });
 
 	}
- </script> -->
+ </script>
 </body>
 </html>
