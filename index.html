@@ -33,6 +33,7 @@
 <link type="text/css" rel="stylesheet" href="css/animated-headlines.css">
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="build/css/intlTelInput.css">
 <link rel="icon" href="img/favicon.ico">
 <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
 <!-- /Styles -->
@@ -821,20 +822,17 @@
 <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="js/animated-headlines.js?ver=3"></script>
 <script type="text/javascript" src="js/waypoints.js?ver=3"></script>
+<!-- Use as a Vanilla JS plugin -->
+<script src="build/js/intlTelInput.min.js"></script>
+<script src="build/js/intlTelInput-jquery.min.js"></script>  
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-	var phone_number = window.intlTelInput(document.querySelector("#phone"), {
-  separateDialCode: true,
-  preferredCountries:["in"],
-  hiddenInput: "full",
-  utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
-});
-$("form").submit(function() {
-  var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
-$("input[name='phone'").val(full_number);
-  alert(full_number)
-});
-	</script>
+	// jQuery 
+
+		$("#phone").intlTelInput({
+		// options here
+		});	
+</script>
 <script>
 	AOS.init()
 </script>

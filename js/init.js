@@ -214,14 +214,7 @@ function(o) {
                 right: "100%"
             }), e.find(".progress_item").removeClass("open")
         },
-        inputMask: function(){
-            $(function(){
-                //Использование параметра completed
-                $("#phone").inputmask("8(999) 999-9999", {
-                    completed: function(){ alert("Вы ввели номер: " + this.val()); }
-                });
-            });
-        },
+    
         imgToSVG: function() {
             o("img.fn__svg").each(function() {
                 var e = o(this),
