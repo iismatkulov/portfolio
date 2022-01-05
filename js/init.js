@@ -62,6 +62,13 @@ function(o) {
         contactForm: function() {
             var elements = $('.modal-overlay, .modal');
 
+            $(function(){
+                //Использование параметра completed
+                $("#phone").mask("8(999) 999-9999", {
+                    completed: function(){ alert("Вы ввели номер: " + this.val()); }
+                });
+            });
+
             $('.close-window').click(function(){
                 elements.removeClass('active');
             });
