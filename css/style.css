@@ -2753,6 +2753,7 @@ body.resume-opened .humble_fn__cv .cv__bg2 {
     font-size: 1.5rem;
   }
   .modal {
+    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
