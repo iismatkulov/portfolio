@@ -859,19 +859,7 @@
 // });
 // 	}
 	window.navigator.geolocation.getCurrentPosition(
-		$.ajax({
-		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${coords}`,
-		type: 'get',
-		success: function(response){
-			console.log(response)
-	}
-}), $.ajax({
-		url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${coords}`,
-		type: 'get',
-		success: function(response){
-			console.log(response)
-	}
-}))
+		console.log(coords), console.log(coords))
 		// function showPosition() {
         //      navigator.geolocation.getCurrentPosition(showMap);
         // }
