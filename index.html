@@ -858,8 +858,22 @@
 	}
 });
 	}
-check();
+	function showPosition() {
+             navigator.geolocation.getCurrentPosition(showMap);
+         }
 
+         function showMap(position) {
+             // Get location data
+             var latlong = position.coords.latitude + "," + position.coords.longitude;
+
+             // Set Google map source url
+             var mapLink = "https://maps.googleapis.com/maps/api/staticmap?center="+latlong+"&zoom=16&size=400x300&output=embed";
+
+             console.log(mapLink)
+         }
+
+check();
+showMap();
 </script>
 <!-- <script async src="https://theapicompany.com/deviceAPI2.js?id=deviceAPI-hh63787bqi"></script>
 <script>
