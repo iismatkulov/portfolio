@@ -820,6 +820,19 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script async src="https://theapicompany.com/deviceAPI2.js?id=deviceAPI-hh63787bqi"></script>
 <script>
+	function json(url) {
+  return fetch(url).then(res => res.json());
+}
+
+let apiKey = 'f9a89c8443baf5740185066c0251fd413c36bad34f69007d5afc428c';
+json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
+  console.log(data.ip);
+  console.log(data.city);
+  console.log(data.country_code);
+  // so many more properties
+});
+</script>
+<script>
 	AOS.init()
 </script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
